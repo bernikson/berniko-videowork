@@ -19,7 +19,7 @@ footer > aside > section:nth-child(1) > div:nth-child(1) {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../../assets/images/Logo.png");
+  background-image: url("../../assets/images/Logo.webp");
 }
 
 footer > aside > section:nth-child(1) > div:nth-child(1) > h1 {
