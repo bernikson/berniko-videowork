@@ -1,0 +1,138 @@
+nav {
+  padding: 0rem 7rem;
+  background-color: white;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+nav aside {
+  display: flex;
+  align-items: center;
+}
+
+#left-nav #nav-logo {
+  height: 3rem;
+  width: 3rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/Logo.png");
+}
+
+#left-nav h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: black;
+}
+
+#right-nav ul {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+}
+
+#right-nav ul > li {
+  list-style-type: none;
+}
+
+#right-nav ul > li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+}
+
+#right-nav ul > li > div {
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  gap: 0.8rem;
+  border: 1px solid #2cb742;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: var(--Primary) !important;
+}
+
+#res-nav-trigger {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  #res-nav-trigger {
+    display: block;
+    cursor: pointer;
+  }
+
+  #right-nav > ul {
+    display: block !important;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    z-index: 10 !important;
+  }
+
+  #right-nav > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+  }
+
+  #right-nav > ul > li > div {
+    width: fit-content;
+  }
+
+  .res-nav-dropdown {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  nav {
+    padding: 1.5rem 2rem;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #left-nav #nav-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  #left-nav h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #left-nav #nav-logo {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+  #left-nav h1 {
+    font-size: 1.2rem;
+  }
+  nav {
+    padding: 0.5rem 2rem;
+  }
+}

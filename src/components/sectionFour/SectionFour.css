@@ -1,0 +1,131 @@
+#sectionFour {
+  width: 100%;
+  display: flex;
+  padding: 5rem 11rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: #eff2f6;
+  position: relative;
+}
+
+#sectionFour > article {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.1));
+}
+
+#sectionFour > article > h2 {
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  margin: 1.3rem 0;
+  color: var(--PrimaryBlack);
+}
+
+#sectionFour > article > span {
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  color: var(--Ash);
+}
+
+#sectionFour > article > a {
+  text-decoration: none;
+  padding: 0.7rem 2rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  width: fit-content;
+  border-radius: 100px;
+  margin-top: 1.5rem;
+  white-space: nowrap;
+}
+
+#sectionFour > article:nth-child(2) > a {
+  background: rgba(252, 107, 63, 1);
+}
+
+#sectionFour > article:nth-child(3) > a {
+  background: rgba(73, 104, 255, 1);
+}
+
+#circle-decor-v2 {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+
+#sectionFour > article > div {
+  height: 0.1rem;
+  width: 100%;
+  background: rgba(218, 218, 218, 1);
+  margin: 2rem 0;
+}
+
+#sectionFour > article > ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+#sectionFour > article > ul > li {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  list-style-image: url("../../assets/images/point.png");
+  padding: 0.7rem 0;
+  padding-left: 0.7rem;
+}
+
+@media screen and (max-width: 1050px) {
+  #sectionFour {
+    padding: 5rem 7rem;
+  }
+
+  #sectionFour > article {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #sectionFour {
+    padding: 5rem 3rem;
+  }
+
+  #sectionFour > article {
+    width: 34%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #sectionFour {
+    padding: 3rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #sectionFour > article {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #sectionFour {
+    padding: 3rem 1rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  #sectionFour > article {
+    width: 100%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
+}

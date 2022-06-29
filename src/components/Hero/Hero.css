@@ -1,0 +1,148 @@
+header {
+  display: flex;
+  padding: 4rem 7rem;
+  background-color: white;
+}
+
+header > #left-header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > #left-header > h1 {
+  margin: 0;
+  margin-top: 5rem;
+  font-weight: 700;
+  font-size: 3.125rem;
+  font-family: "Public Sans", sans-serif;
+  color: var(--PrimaryBlack);
+}
+
+header > #left-header > h6 {
+  color: var(--Ash);
+  font-weight: 400;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+header > #left-header > div {
+  width: 35vw;
+  display: flex;
+  background-color: white;
+  border-radius: 100px;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+header > #left-header > div > span {
+  font-weight: 300;
+  color: var(--Ash);
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  margin-left: 1.4rem;
+  white-space: nowrap;
+}
+
+header > #left-header > div > a {
+  text-decoration: none;
+  padding: 0.7em 2rem;
+  font-weight: 500;
+  background-color: var(--Primary);
+  color: white;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+header > #right-header > div {
+  height: clamp(20rem, 40vw, 50rem);
+  width: clamp(20rem, 40vw, 50rem);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../assets/images/Banner.png");
+}
+
+@media screen and (max-width: 1050px) {
+  header > #left-header > h1 {
+    font-size: 2.5rem;
+  }
+  header > #left-header > h6 {
+    font-size: 1rem;
+  }
+  header > #left-header > div > span {
+    font-size: 0.8rem;
+  }
+  header > #left-header > div > a {
+    font-size: 1rem;
+  }
+  header {
+    padding: 4rem 2rem;
+  }
+  header > #left-header > div {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header > #left-header > h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  header > #left-header > h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  header > #left-header > div > span {
+    font-size: 0.8rem;
+  }
+  header > #left-header > div > a {
+    font-size: 1rem;
+  }
+  header {
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  header > #left-header > div {
+    width: 100%;
+  }
+  header > #right-header > div {
+    margin: 4rem 0;
+    height: clamp(28rem, 50vw, 60rem);
+    width: clamp(28rem, 50vw, 60rem);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header > #left-header > h1 {
+    font-size: 1.625rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  header > #left-header > h6 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  header > #left-header > div > span {
+    font-size: 0.875rem;
+  }
+  header > #left-header > div > a {
+    font-size: 0.875rem;
+  }
+  header {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  header > #left-header > div {
+    width: 100%;
+  }
+  header > #right-header > div {
+    margin: 4rem 0;
+    height: clamp(20rem, 50vw, 60rem);
+    width: clamp(20rem, 50vw, 60rem);
+  }
+}

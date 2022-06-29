@@ -1,0 +1,217 @@
+#sectionThree {
+  padding: 3rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#sectionThree > h1 {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Public Sans", sans-serif;
+  font-size: 3.125rem;
+  width: 45vw;
+  color: var(--PrimaryBlack);
+}
+
+#sectionThree > h1 > span {
+  color: var(--Primary);
+}
+
+#sectionThree > aside {
+  display: flex;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+#sectionThree > aside > aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+
+#sectionThree > aside > aside:nth-child(1) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/App.png");
+  width: 39rem;
+  height: 40rem;
+  /* width: clamp(34rem, 41vw, 41rem);
+  height: clamp(35rem, 42vw, 42rem); */
+}
+
+#sectionThree > aside > aside > article {
+  background-color: white;
+  width: 27rem;
+  gap: 1.3rem;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid rgba(218, 218, 218, 1);
+  position: relative;
+  box-sizing: border-box;
+}
+
+#sectionThree > aside > aside > article > div {
+  width: 7rem;
+  height: auto;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 44%;
+  left: -8rem;
+}
+#sectionThree > aside > aside > article:nth-child(2) > div,
+#sectionThree > aside > aside > article:nth-child(3) > div {
+  width: 10rem;
+  height: auto;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 44%;
+  left: -12rem;
+}
+
+#sectionThree > aside > aside > article > div > div:nth-child(1) {
+  width: 1rem;
+  border-radius: 100px;
+  height: 1rem;
+  background-color: var(--Secondary);
+}
+#sectionThree > aside > aside > article > div > div:nth-child(2) {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--Secondary);
+}
+
+#sectionThree > aside > aside > article:nth-child(2),
+#sectionThree > aside > aside > article:nth-child(3) {
+  margin-left: 13rem;
+}
+
+#sectionThree > aside > aside > article > h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--PrimaryBlack);
+  font-family: "Open Sans", sans-serif;
+}
+
+#sectionThree > aside > aside > article > span {
+  font-size: 0.875rem;
+  color: var(--Ash);
+}
+
+@media screen and (max-width: 1350px) {
+  #sectionThree > aside > aside:nth-child(1) {
+    width: 32rem;
+    height: 33rem;
+    margin-top: 1rem;
+  }
+  #sectionThree > aside > aside {
+    gap: 0.7rem;
+  }
+  #sectionThree > aside > aside > article {
+    width: 22rem;
+  }
+  #sectionThree > h1 {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  #sectionThree {
+    padding: 3rem;
+  }
+  #sectionThree > aside {
+    justify-content: space-between;
+    width: 100%;
+  }
+  #sectionThree > aside > aside > article {
+    margin: 0 !important;
+  }
+  #sectionThree > aside > aside > article > div {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #sectionThree > aside {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  #sectionThree > aside > aside:nth-child(1) {
+    width: clamp(34rem, 41vw, 41rem);
+    height: clamp(35rem, 42vw, 42rem);
+  }
+  #sectionThree > h1 {
+    width: 70vw;
+  }
+  #sectionThree > aside > aside:nth-child(2) {
+    margin-top: 3rem;
+  }
+  #sectionThree > aside > aside {
+    width: 70%;
+  }
+  #sectionThree > aside > aside > article {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #sectionThree > aside > aside {
+    width: 90%;
+  }
+  #sectionThree > aside > aside > article {
+    width: 100%;
+  }
+  #sectionThree > h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #sectionThree > aside > aside {
+    width: 100%;
+  }
+  #sectionThree > aside > aside > article {
+    width: 100%;
+  }
+  #sectionThree > aside > aside:nth-child(1) {
+    width: 27rem;
+    height: 28rem;
+  }
+  #sectionThree > h1 {
+    font-size: 2rem;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #sectionThree {
+    padding: 3rem 1rem;
+  }
+  #sectionThree > aside > aside:nth-child(1) {
+    width: 22rem;
+    height: 23rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #sectionThree > aside > aside:nth-child(1) {
+    width: 16.5rem;
+    height: 17rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #sectionThree > aside > aside:nth-child(1) {
+    width: 14rem;
+    height: 15rem;
+  }
+}
