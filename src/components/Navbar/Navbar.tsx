@@ -1,8 +1,8 @@
 import React from "react";
 import "./Navbar.css";
-import { NavLink } from "react-router-dom";
 import Whatsapp from "../../assets/svgs/Whatsapp";
 import Menu from "../../assets/svgs/Menu";
+import { Link } from "react-scroll";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -15,30 +15,64 @@ const Navbar = () => {
         <h1>VideoWork</h1>
       </aside>
       <aside id="right-nav">
-        <ul className={resNav ? 'res-nav-dropdown' : undefined}>
+        <ul className={resNav ? "res-nav-dropdown" : undefined}>
           <li>
-            <NavLink
-              className={(isActive) : string =>
-                "nav-link" + (!isActive ? " unselected" : "")
-              }
-              to="/"
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
             >
               Home
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink to="/home">Features</NavLink>
+            <Link
+              activeClass="active"
+              to="sectionSeven"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
+            >
+              Features
+            </Link>
           </li>
           <li>
-            <NavLink to="/home">Testimonials</NavLink>
+            <Link
+              activeClass="active"
+              to="sectionSix"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
+            >
+              Testimonials
+            </Link>
           </li>
           <li>
-            <NavLink to="/home">About</NavLink>
+            <Link
+              activeClass="active"
+              to="sectionThree"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
+            >
+              About
+            </Link>
           </li>
-          <li>
+          <li onClick={() => window.open("https://wa.link/190xqc", "_blank")}>
             <div>
               <Whatsapp width={25} height={25} />
-              <NavLink to="/contact">Contact Us</NavLink>
+              <Link
+                to="/"
+                onClick={() => window.open("https://wa.link/190xqc", "_blank")}
+              >
+                Contact Us
+              </Link>
             </div>
           </li>
         </ul>

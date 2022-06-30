@@ -2,18 +2,18 @@
   padding: 7rem 5rem;
   box-sizing: border-box;
   display: flex;
-  gap: 8rem;
+  gap: 5rem;
   justify-content: center;
 }
 
 #sectionSeven > aside:nth-child(1) {
   display: flex;
   flex-direction: column;
-  width: 50rem;
+  width: 70rem;
 }
 
 #sectionSeven > aside:nth-child(1) > h1 {
-  font-size: 2.625rem;
+  font-size: 3rem;
   font-weight: 700;
   font-family: "Public Sans", sans-serif;
   margin-top: 0;

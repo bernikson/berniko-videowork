@@ -4,7 +4,8 @@ import Github from "../../assets/svgs/Github";
 import Instagram from "../../assets/svgs/Instagram";
 import Twitter from "../../assets/svgs/Twitter";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import Medium from "../../assets/svgs/Medium";
 
 const Footer = () => {
   return (
@@ -16,39 +17,92 @@ const Footer = () => {
             <h1>VideoWork</h1>
           </div>
           <p>
-            Lorem ipsum dolor sit amet,adipiscing elit. Eu, montes, metus
-            porttitor consectetur pretium. Euismod imperdiet
+            The first live video platform where people who want to learn
+            "particular" skills may communicate with top experts from all over
+            the world and learn informally in a live session, making learning
+            interesting and valuable.
           </p>
           <div id="footer-contact-wrapper">
-            <div>
+            <div
+              onClick={() =>
+                window.open("https://www.instagram.com/videoworkinc/", "_blank")
+              }
+            >
               <Instagram width={23} height={23} />
             </div>
-            <div>
+            <div
+              onClick={() =>
+                window.open("https://twitter.com/videoworkinc", "_blank")
+              }
+            >
               <Twitter width={23} height={23} />
             </div>
-            <div>
+            <div
+              onClick={() =>
+                window.open("https://www.facebook.com/videoworkinc", "_blank")
+              }
+            >
               <Facebook width={23} height={23} />
             </div>
-            <div>
-              <Github width={23} height={23} />
+            <div
+              onClick={() =>
+                window.open("https://medium.com/videoworkinc", "_blank")
+              }
+            >
+              <Medium width={25} height={25} />
             </div>
           </div>
         </section>
         <section>
           <article>
             <h4>Quick Links</h4>
-            <Link to="/">About</Link>
-            <Link to="/">Careers</Link>
+            <Link
+              activeClass="active"
+              to="sectionThree"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
+            >
+              About
+            </Link>
+            <Link
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-60}
+            >
+              Careers
+            </Link>
           </article>
           <article>
             <h4>Community</h4>
-            <Link to="/">Blogs</Link>
-            <Link to="/">Support</Link>
+            <a href="https://medium.com/videoworkinc" target="_blank">
+              Blogs
+            </a>
+            <a
+              href="https://support-videowork.freshdesk.com/support/home"
+              target="_blank"
+            >
+              Support
+            </a>
           </article>
           <article>
             <h4>Legal</h4>
-            <Link to="/">Privacy Policy</Link>
-            <Link to="/">Term of Service</Link>
+            <a
+              href="https://www.videowork.com/privacy-policy.pdf"
+              target="_blank"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="https://www.videowork.com/terms-of-service.pdf"
+              target="_blank"
+            >
+              Term of Service
+            </a>
           </article>
         </section>
       </aside>

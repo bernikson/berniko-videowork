@@ -2,6 +2,7 @@ header {
   display: flex;
   padding: 4rem 7rem;
   background-color: white;
+  margin-top: 4rem;
 }
 
 header > #left-header {
@@ -16,6 +17,20 @@ header > #left-header > h1 {
   font-size: 3.125rem;
   font-family: "Public Sans", sans-serif;
   color: var(--PrimaryBlack);
+}
+
+header > #left-header > h1 > span:nth-child(1) {
+  background-image: url("../../assets/images/TextEditOne.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header > #left-header > h1 > span:nth-child(2) {
+  background-image: url("../../assets/images/TextEditTwo.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 header > #left-header > h6 {
@@ -37,13 +52,16 @@ header > #left-header > div {
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
 }
 
-header > #left-header > div > span {
-  font-weight: 300;
-  color: var(--Ash);
-  font-family: "Public Sans", sans-serif;
-  font-size: 1rem;
-  margin-left: 1.4rem;
-  white-space: nowrap;
+header > #left-header > div > input {
+  width: 100%;
+  border: none;
+  height: 100%;
+  padding: 0rem 1rem;
+  border-radius: 100px;
+}
+
+header > #left-header > div > input:focus {
+  outline: none;
 }
 
 header > #left-header > div > a {
@@ -118,7 +136,7 @@ header > #right-header > div {
 
 @media screen and (max-width: 450px) {
   header > #left-header > h1 {
-    font-size: 1.625rem;
+    font-size: 2rem;
     text-align: center;
     margin-top: 3rem;
   }

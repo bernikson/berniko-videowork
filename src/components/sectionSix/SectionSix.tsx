@@ -58,11 +58,6 @@ const SectionSix = () => {
           <span>Demo was AWESOME. Very cool idea!</span>
         </article>
       </aside>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
     </section>
   );
 };

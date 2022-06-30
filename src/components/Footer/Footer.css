@@ -9,6 +9,10 @@ footer > aside > section:nth-child(1) {
   width: 30vw;
 }
 
+#root > main > footer > aside > section:nth-child(2) > article > a {
+  cursor: pointer;
+}
+
 footer > aside > section:nth-child(1) > div:nth-child(1) {
   display: flex;
 }
@@ -27,7 +31,7 @@ footer > aside > section:nth-child(1) > div:nth-child(1) > h1 {
   margin: 0;
   margin-left: 1.3rem;
   font-family: "Open Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: black;
 }
 
@@ -54,6 +58,7 @@ footer > aside > section:nth-child(1) > p {
 footer > aside {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 footer > aside > section:nth-child(2) {
@@ -86,7 +91,6 @@ footer span {
   color: var(--PrimaryBlack);
   transform: translateY(3rem);
 }
-
 @media screen and (max-width: 1200px) {
   footer > aside > section:nth-child(2) {
     gap: 5rem;
@@ -138,6 +142,21 @@ footer span {
   }
   footer {
     padding: 3rem;
+  }
+  footer > aside::before {
+    content: "";
+    top: 103%;
+    left: 0;
+    display: block;
+    height: 0.05rem;
+    width: 80%;
+    background-color: lightgray;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  footer span {
+    margin-bottom: 3rem;
   }
 }
 
