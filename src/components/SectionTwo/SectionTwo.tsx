@@ -13,7 +13,7 @@ const SectionTwo = () => {
       </div>
 
       <article>
-        <Learner width={25} height={30} />
+        <Learner width={45} height={45} />
         <h2>Join as a Learner</h2>
         <span>
           We have hundreds of experts ready to teach you all the skills you’re
@@ -22,7 +22,7 @@ const SectionTwo = () => {
         <Link to="/">I Want to Learn</Link>
       </article>
       <article>
-        <LearnerTwo width={35} height={35} />
+        <LearnerTwo width={45} height={45} />
         <h2>Join as a Expert</h2>
         <span>
           We have hundreds of experts ready to teach you all the skills you’re

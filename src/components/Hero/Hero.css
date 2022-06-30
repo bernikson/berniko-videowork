@@ -57,6 +57,7 @@ header > #left-header > div > input {
   border: none;
   height: 100%;
   padding: 0rem 1rem;
+  font-size: 1rem;
   border-radius: 100px;
 }
 

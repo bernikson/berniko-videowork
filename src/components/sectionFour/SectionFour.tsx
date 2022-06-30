@@ -14,14 +14,13 @@ const SectionFour = () => {
       </div>
 
       <article>
-        <Liveicon width={35} height={35} />
+        <Liveicon width={45} height={45} />
         <h2>Live</h2>
         <span>
           Get paid by doing live broadcast or the two-way one-on-one
           communication session with your learners or fans paying you on a
           per-session payment model.
         </span>
-        <Link to="/">I Want to Learn</Link>
         <div></div>
         <ul>
           <li>Go with video or audio-only</li>
@@ -30,14 +29,13 @@ const SectionFour = () => {
         </ul>
       </article>
       <article>
-        <Richmediaicon width={35} height={35} />
+        <Richmediaicon width={45} height={45} />
         <h2>Rich Media</h2>
         <span>
           Get paid for the content you create (any form of rich media), it’s
           your wish how often and when you want to share the content. Your
           learners or fans pay you on a monthly subscription model.
         </span>
-        <Link to="/">I Want to Teach</Link>
         <div></div>
         <ul>
           <li>Send updates instantly to learners</li>
