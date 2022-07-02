@@ -57,7 +57,7 @@ header > #left-header > div > input {
   border: none;
   height: 100%;
   padding: 0rem 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 100px;
 }
 
@@ -163,5 +163,13 @@ header > #right-header > div {
     margin: 4rem 0;
     height: clamp(20rem, 50vw, 60rem);
     width: clamp(20rem, 50vw, 60rem);
+  }
+  header > #left-header > div > input {
+    width: 100%;
+    border: none;
+    height: 100%;
+    padding: 0rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 100px;
   }
 }
