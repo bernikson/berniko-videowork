@@ -11,7 +11,9 @@ const SectionSix = () => {
       <div id="circle-decor">
         <Circles width={90} height={140} />
       </div>
-      <h1>What People Say About Us?</h1>
+      <h1>
+        What <span>People</span> Say About Us?
+      </h1>
       <aside>
         <article>
           <aside>

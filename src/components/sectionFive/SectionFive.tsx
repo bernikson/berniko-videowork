@@ -14,8 +14,8 @@ const SectionFive = () => {
       </aside>
       <aside>
         <h1>
-          Enabling video entrepreneurs to teach amazing skills to learners
-          around the world
+          Enabling <span>video entrepreneurs</span> to teach amazing skills to
+          learners around the world
         </h1>
         <Link to="/">Become Provider</Link>
       </aside>

@@ -11,7 +11,9 @@ const SectionSeven = () => {
   return (
     <section id="sectionSeven">
       <aside>
-        <h1>What makes Videowork such an amazing platform</h1>
+        <h1>
+          What makes <span>Videowork</span> such an amazing platform
+        </h1>
         <Link to="/">Get Started</Link>
       </aside>
       <aside>

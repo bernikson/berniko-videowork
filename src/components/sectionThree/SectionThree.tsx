@@ -4,7 +4,9 @@ import "./SectionThree.css";
 const SectionThree = () => {
   return (
     <section id="sectionThree">
-      <h1>Amazing mobile app for on-the-go learning & teaching</h1>
+      <h1>
+        Amazing <span>mobile app</span> for on-the-go learning & teaching
+      </h1>
       <aside>
         <aside>
           <div></div>
