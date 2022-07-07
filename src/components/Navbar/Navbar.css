@@ -17,6 +17,11 @@ nav aside {
   align-items: center;
 }
 
+#left-nav {
+  display: flex;
+  align-items: center;
+}
+
 #left-nav #nav-logo {
   height: 3rem;
   width: 3rem;
@@ -24,6 +29,16 @@ nav aside {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../../assets/images/Logo.webp");
+}
+
+#nav-logo-text {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/images/LogoText.png");
+  width: 13rem;
+  height: 2rem;
+  margin-left: 1rem;
 }
 
 #left-nav h1 {

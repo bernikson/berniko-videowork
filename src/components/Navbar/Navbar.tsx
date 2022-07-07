@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav>
       <aside id="left-nav">
         <div id="nav-logo"></div>
-        <h1>VideoWork</h1>
+        <div id="nav-logo-text" style={{ marginTop: "-0.4rem" }}></div>
       </aside>
       <aside id="right-nav">
         <ul className={resNav ? "res-nav-dropdown" : undefined}>

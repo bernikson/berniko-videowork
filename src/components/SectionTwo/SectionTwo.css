@@ -50,11 +50,11 @@
 }
 
 #sectionTwo > article:nth-child(2) > a {
-  background: rgba(252, 107, 63, 1);
+  background: var(--Primary);
 }
 
 #sectionTwo > article:nth-child(3) > a {
-  background: rgba(73, 104, 255, 1);
+  background: var(--Primary);
 }
 
 #circle-decor {

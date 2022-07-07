@@ -14,7 +14,7 @@ const Footer = () => {
         <section>
           <div>
             <div id="footer-logo"></div>
-            <h1>VideoWork</h1>
+            <div id="nav-logo-text" style={{ marginTop: "0.4rem" }}></div>
           </div>
           <p>
             The first live video platform where people who want to learn
